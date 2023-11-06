@@ -6,8 +6,43 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    min-height : 100vh;
 }
 
 .active-button {
     background-color: rgb(229 231 235);
+}
+
+.paginate li {
+    width           : 30px;
+    height          : 30px;
+    border          : 1px solid black;
+    margin          : 5px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 5px;
+    background-color: black;
+    color           : white;
+}
+
+.itemBox img {
+    margin-right: 48px;
+}
+
+.itemBox div:nth-child(1) {
+    flex: 3;
+}
+
+.itemBox div:nth-child(2) {
+    top : 0;
+    flex: 6;
+}
+
+.itemBox div:nth-child(3) {
+    flex: 2;
+}
+
+.itemBox div:nth-child(4) {
+    flex: 1;
 }

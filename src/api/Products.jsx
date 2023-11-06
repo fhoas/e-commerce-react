@@ -20,7 +20,7 @@ const Products = () => {
   }, []);
 
   if (loading) {
-    return <div>Veriler yükleniyor...</div>;
+    return <div>Data is loading...</div>;
   }
 };
 

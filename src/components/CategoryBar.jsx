@@ -25,7 +25,7 @@ const CategoryBar = () => {
   }
 
   return (
-    <div className="flex justify-between w-full rounded bg-gray-100 h-fit mb-8 ">
+    <div className="flex justify-between w-full rounded bg-gray-100 h-fit my-8 ">
       <div
         value="all"
         onClick={handleButton}
