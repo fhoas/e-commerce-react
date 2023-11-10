@@ -4,7 +4,7 @@ import FooterRight from "./FooterRight";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-between py-8 relative bottom-0 left-0">
+    <footer className="flex items-center justify-between py-8 absolute">
       <FooterLeft />
       <FooterRight />
     </footer>

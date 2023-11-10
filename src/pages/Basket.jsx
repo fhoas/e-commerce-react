@@ -18,17 +18,21 @@ const Basket = () => {
     }
   }, [basketItems]);
 
+  basketItems.filter
+
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
-      <h1 className="text-3xl">Your Basket</h1>
-      <ul className="flex flex-col gap-4 w-full">
-        {basketItems.map((item, index) => (
-          <li key={index}>
-            <BasketItem item={item} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="flex flex-col justify-center items-center gap-4 min-h-[77vh]">
+        <h1 className="text-3xl">Your Basket</h1>
+        <ul className="flex flex-col gap-4 w-full">
+          {basketItems.map((item, index) => (
+            <li key={index}>
+              <BasketItem item={item} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 

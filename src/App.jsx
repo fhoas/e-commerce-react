@@ -15,8 +15,6 @@ import ProductDetail from "./components/ProductDetail";
 function App() {
   const [activeButton, setActiveButton] = useState(null);
 
-  const [productCount, setProductCount] = useState(1);
-
   const [basketItems, setBasketItems] = useState([]);
 
   const [products, setProducts] = useState([]);
@@ -30,9 +28,7 @@ function App() {
     loading,
     setLoading,
     basketItems,
-    setBasketItems,
-    productCount,
-    setProductCount,
+    setBasketItems
   };
 
   console.log(products);

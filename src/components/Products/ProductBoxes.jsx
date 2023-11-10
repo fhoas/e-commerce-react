@@ -6,7 +6,6 @@ import ReactPaginate from "react-paginate";
 const ProductBoxes = () => {
   const { products, activeButton } = useContext(MainContext);
 
-
   if (!products) {
     return <div>Veriler yükleniyor...</div>;
   }
@@ -34,13 +33,9 @@ const ProductBoxes = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-8 place-items-center">
         {currentItems.map((product, index) => (
-          <div
-            key={index}
-            className="ProductBox"
-
-          >
+          <div key={index} className="ProductBox">
             <ProductBox
               key={product.id}
               id={product.id}
